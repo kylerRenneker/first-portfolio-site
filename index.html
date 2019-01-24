@@ -25,71 +25,216 @@
                 </ul>
             </nav>
         </section>
-        <section class="landing">
-            <h2>Hi, I'm Kyler Renneker</h2>
-            <h1>WEB DEVELOPER</h1>
-            <h2>
-                HTML 
-                <span>•</span>
-                &nbsp; CSS
-                <span>•</span>
-                &nbsp; JAVASCRIPT
-            </h2>
-            <button>GET IN TOUCH</button>
-        </section>
-        <section class="about">
-            <h2>ABOUT</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Fusce sodales gravida magna, a fringilla tortor facilisis 
-                sed. Maecenas iaculis est id dolor varius, a tempor nisi 
-                lacinia. Sed quis erat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Fusce sodales gravida magna, a fringilla tortor facilisis 
-                sed. Maecenas iaculis est id dolor varius, a tempor nisi 
-                lacinia. Sed quis erat.
-            </p>
-        </section>
-        <section class="skills">
-            <h2>FROM DESIGN TO DEPLOYMENT</h2>
-            <div class="skill-1">
-                <img src="" alt="">
-                <h3>EXPLORE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                   Fusce sodales gravida magna, a fringilla tortor facilisis 
-                   sed. Maecenas iaculis est id dolor varius, a tempor nisi lacinia. Sed quis erat.
-                </p>
+        <section class="landing-page">
+            <div class="box landing">
+                <h2>Hi, I'm Kyler Renneker</h2>
+                <h1>WEB DEVELOPER</h1>
+                <h2>
+                    HTML 
+                    <span>•</span>
+                    &nbsp; CSS
+                    <span>•</span>
+                    &nbsp; JAVASCRIPT
+                </h2>
+                <button>GET IN TOUCH</button>
             </div>
-            <div class="skill-2">
-                <img src="" alt="">
-                <h3>DESIGN</h3>
+        </section>
+        <section class="about-page">
+            <div class="box about">
+                <h2>ABOUT</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                   Fusce sodales gravida magna, a fringilla tortor facilisis 
-                   sed. Maecenas iaculis est id dolor varius, a tempor nisi lacinia. Sed quis erat.
-                </p>
-            </div>
-            <div class="skill-3">
-                <img src="" alt="">
-                <h3>DEVELOP</h3>
+                    Fusce sodales gravida magna, a fringilla tortor facilisis 
+                    sed. Maecenas iaculis est id dolor varius, a tempor nisi 
+                    lacinia. Sed quis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Fusce sodales gravida magna, a fringilla tortor facilisis 
+                    sed. Maecenas iaculis est id dolor varius, a tempor nisi 
+                    lacinia. Sed quis erat.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                   Fusce sodales gravida magna, a fringilla tortor facilisis 
-                   sed. Maecenas iaculis est id dolor varius, a tempor nisi lacinia. Sed quis erat.
+                    Fusce sodales gravida magna, a fringilla tortor facilisis 
+                    sed. Maecenas iaculis est id dolor varius, a tempor nisi 
+                    lacinia. Sed quis erat.
                 </p>
             </div>
         </section>
-        <section class="contact">
-            <h2>I can Help</h2>
-            <h3>Contact me for an freelance work.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-               Fusce sodales gravida magna, a fringilla tortor facilisis sed. 
-               Maecenas iaculis est id dolor varius, a tempor nisi lacinia. Sed quis erat.
-            </p>
-            <button>MESSAGE ME</button>
+        <section class="skill-list">
+            <div class="box skills">
+                <h2 class="skillsHead">FROM DESIGN TO DEPLOYMENT</h2>
+                <div class="skill-1 center">
+                    <img src="images/004-network.png" class="skl1-img" alt="">
+                    <h3>EXPLORE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Fusce sodales gravida magna, a fringilla tortor facilisis 
+                    sed. Maecenas iaculis est id dolor varius, a tempor nisi lacinia. Sed quis erat.
+                    </p>
+                </div>
+                <div class="skill-2 center">
+                    <img src="images/005-coding.png" class="skl2-img" alt="">
+                    <h3>DESIGN</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Fusce sodales gravida magna, a fringilla tortor facilisis 
+                    sed. Maecenas iaculis est id dolor varius, a tempor nisi lacinia. Sed quis erat.
+                    </p>
+                </div>
+                <div class="skill-3 center">
+                    <img src="images/006-coding-1.png" class="skl3-img" alt="">
+                    <h3>DEVELOP</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Fusce sodales gravida magna, a fringilla tortor facilisis 
+                    sed. Maecenas iaculis est id dolor varius, a tempor nisi lacinia. Sed quis erat.
+                    </p>  
+            </div>     
+        </section>
+        <section class="contact-page">
+            <div class="box contact">
+                <h2>I can Help</h2>
+                <h3>Contact me for an freelance work.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Fusce sodales gravida magna, a fringilla tortor facilisis sed. 
+                Maecenas iaculis est id dolor varius, a tempor nisi lacinia. Sed quis erat.
+                </p>
+                <button>MESSAGE ME</button>
+            </div>
         </section>
     </div>
 
     <style>
 
+        * {
+            max-width: 100%;
+        }
 
+        .box {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .landing,
+        .about,
+        .skills,
+        .contact {
+            /* display: grid; */
+            text-align: center;
+            /* justify-content: center; */
+        }
+
+        body {
+            box-sizing: border-box;
+        }
+
+        .header {
+            grid-area: header;
+        
+            background: blue
+        }
+
+        .landing-page {
+            background-color: firebrick;
+        }
+
+        .landing {
+            grid-area: landing;
+        }
+
+        .about-page {
+            background: yellowgreen;
+        }
+
+        .about {
+            grid-area: about;
+        }
+
+        .skill-list {
+         background: teal;
+        }
+
+        .skills {
+            grid-area: skills;
+        }
+
+        .contact-page {
+            background: wheat;
+        }
+
+        .contact {
+            grid-area: contact;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "header"
+                "landing"
+                "about"
+                "skills"
+                "contact"
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* font-size: 10px; */
+            list-style: none;
+            margin-right: 15px;
+        }
+
+        .skillsHead {
+            grid-area: skillsHead;
+        }
+
+        .skill-1 {
+            grid-area: skill-1;
+        }
+
+        .skill-2 {
+            grid-area: skill-2;
+        }
+
+        .skill-3 {
+            grid-area: skill-3;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "skillsHead"
+                "skill-1"
+                "skill-2"
+                "skill-3"
+        }
+
+        .center {
+            display: grid;
+            justify-items: center;
+        }
+
+        .skl1-img,
+        .skl2-img,
+        .skl3-img {
+            padding: 15px;
+            width: 50px;
+        }
+
+        @media (min-width: 500px) {
+            .skills {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "skillsHead skillsHead skillsHead"
+                    "skill-1 skill-2 skill-3"
+            }
+        }
     </style>
 
 </body>
