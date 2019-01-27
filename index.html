@@ -7,38 +7,42 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Poppins:400,600,800|Staatliches" rel="stylesheet">
     <title>Kyler Renneker - Web Developer</title>
 </head>
 <body>
     <div class="container">
-        <section class="header">
-            <header>
-                <a href="">
-                    <img src="images/myLogo.png" alt="">
-                </a>
-            </header>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="" class="nav-link-1">ABOUT</a></li>
-                    <li><a href="" class="nav-link-2">SKILLS</a></li>
-                    <li><a href="" class="nav-link-3">CONTACT</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="landing-page">
-            <div class="box landing">
-                <h2>Hi, I'm Kyler Renneker</h2>
-                <h1>WEB DEVELOPER</h1>
-                <h2>
-                    HTML 
-                    <span>•</span>
-                    &nbsp; CSS
-                    <span>•</span>
-                    &nbsp; JAVASCRIPT
-                </h2>
-                <button>GET IN TOUCH</button>
-            </div>
-        </section>
+        <div class="top-page">
+            <section class="header">
+                <header>
+                    <a href="">
+                        <img src="images/myLogo.png" class="header-logo" alt="">
+                    </a>
+                </header>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="" class="nav-link-1">ABOUT</a></li>
+                        <li><a href="" class="nav-link-2">SKILLS</a></li>
+                        <li><a href="" class="nav-link-3">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="landing-page">
+                <div class="box landing">
+                    <h2>Hi, I'm Kyler Renneker</h2>
+                    <h1>WEB DEVELOPER</h1>
+                    <h2>
+                        HTML 
+                        <span>•</span>
+                        &nbsp; CSS
+                        <span>•</span>
+                        &nbsp; JAVASCRIPT
+                    </h2>
+                    <button>GET IN TOUCH</button>
+                </div>
+            </section>
+        </div>
         <section class="about-page">
             <div class="box about">
                 <h2>ABOUT</h2>
@@ -96,146 +100,6 @@
             </div>
         </section>
     </div>
-
-    <style>
-
-        * {
-            max-width: 100%;
-        }
-
-        .box {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .landing,
-        .about,
-        .skills,
-        .contact {
-            /* display: grid; */
-            text-align: center;
-            /* justify-content: center; */
-        }
-
-        body {
-            box-sizing: border-box;
-        }
-
-        .header {
-            grid-area: header;
-        
-            background: blue
-        }
-
-        .landing-page {
-            background-color: firebrick;
-        }
-
-        .landing {
-            grid-area: landing;
-        }
-
-        .about-page {
-            background: yellowgreen;
-        }
-
-        .about {
-            grid-area: about;
-        }
-
-        .skill-list {
-         background: teal;
-        }
-
-        .skills {
-            grid-area: skills;
-        }
-
-        .contact-page {
-            background: wheat;
-        }
-
-        .contact {
-            grid-area: contact;
-        }
-
-        .container {
-            min-height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: 
-                "header"
-                "landing"
-                "about"
-                "skills"
-                "contact"
-        }
-
-        .header {
-            display: grid;
-            grid-template-columns: 4fr 1fr;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-links {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            /* font-size: 10px; */
-            list-style: none;
-            margin-right: 15px;
-        }
-
-        .skillsHead {
-            grid-area: skillsHead;
-        }
-
-        .skill-1 {
-            grid-area: skill-1;
-        }
-
-        .skill-2 {
-            grid-area: skill-2;
-        }
-
-        .skill-3 {
-            grid-area: skill-3;
-        }
-
-        .skills {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: 
-                "skillsHead"
-                "skill-1"
-                "skill-2"
-                "skill-3"
-        }
-
-        .center {
-            display: grid;
-            justify-items: center;
-        }
-
-        .skl1-img,
-        .skl2-img,
-        .skl3-img {
-            padding: 15px;
-            width: 50px;
-        }
-
-        @media (min-width: 500px) {
-            .skills {
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: auto;
-                grid-template-areas: 
-                    "skillsHead skillsHead skillsHead"
-                    "skill-1 skill-2 skill-3"
-            }
-        }
-    </style>
 
 </body>
 </html>
