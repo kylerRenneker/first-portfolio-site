@@ -77,8 +77,7 @@ a.email-button {
     text-shadow: none;
 }
 
-.box.about, .skills, .contact-page {
-    margin: 80px 20px;
+.about, .skills, .contact-page {
     font-family: poppins,sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
@@ -87,7 +86,7 @@ a.email-button {
     color: rgb(22, 22, 22);
 }
 
-.skills {
+.skill-list {
     background: rgb(11, 232, 239);
 }
 

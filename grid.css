@@ -12,9 +12,10 @@
 .about,
 .skills,
 .contact {
-    /* display: grid; */
     text-align: center;
-    /* justify-content: center; */
+    margin: 80px auto 80px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 body {
@@ -27,9 +28,9 @@ body {
     /* background: blue */
 }
 
-.landing-page {
+/* .landing-page {
     align-self: center;
-}
+} */
 
 .landing {
     grid-area: landing;
