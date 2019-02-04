@@ -105,6 +105,7 @@ body {
 }
 
 .skills {
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -124,7 +125,7 @@ body {
 .skl2-img,
 .skl3-img {
     padding: 15px;
-    width: 50px;
+    width: 140px;
 }
 
 @media (min-width: 500px) {
