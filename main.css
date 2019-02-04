@@ -91,3 +91,10 @@ a.email-button {
     background: rgb(11, 232, 239);
 }
 
+
+@media(min-width: 740px){
+.skills p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+}
