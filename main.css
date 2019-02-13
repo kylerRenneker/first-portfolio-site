@@ -86,6 +86,17 @@ a.email-button {
     color: rgb(22, 22, 22);
 }
 
+.contactLinks img {
+    width: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.contactLinks {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .skill-list {
     background: rgb(11, 232, 239);
 }
