@@ -64,7 +64,7 @@ a.email-button {
     font-size: 1.2rem;
     border-radius: 35px;
     border: none;
-    max-width: 160px;
+    width: 160px;
     margin: 45px auto 35px;
     color: white;
     font-family: poppins, sans-serif;
@@ -76,11 +76,11 @@ a.email-button {
     line-height: 40px;
     box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
     text-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .email-button:hover {
-    animation-name: emailbutton;
-    animation-duration: 1s;
+    box-shadow: none;
 }
 
 .about, .skills, .contact-page {
@@ -107,10 +107,22 @@ a.email-button {
     background: rgb(11, 232, 239);
 }
 
-@keyframes emailbutton {
-    from {box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);}
-    to {box-shadow: none;}
+.arrow {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left:-20px;
+    width: 40px;
+    height: 40px;
 }
+
+.hide {
+    z-index: -1;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+  }
 
 @media(min-width: 500px){
 

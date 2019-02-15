@@ -129,4 +129,10 @@ body {
     .header-logo {
         width: 80px;
     }
+
+    .about p,
+    .skills p,
+    .contact p{
+        text-align: left;
+    }
 }
