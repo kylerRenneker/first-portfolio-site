@@ -116,7 +116,7 @@ body {
     width: 140px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 640px) {
     .skills {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
