@@ -6,3 +6,12 @@ $(function(){
             scrollTop: $(section).offset().top}, 'slow');
     });
 })
+
+$(window).scroll(function(){
+    if($(this).scrollTop() > 40){
+        $('.arrow').addClass('hide');
+    }
+    else {
+        $('.arrow').removeClass('hide');
+    }
+})
