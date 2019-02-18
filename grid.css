@@ -10,14 +10,16 @@
 
 .landing,
 .about,
-.skills {
+.skills,
+.projects {
 margin: 80px auto 80px;
 }
 
 .landing,
 .about,
 .skills,
-.contact {
+.contact,
+.projects {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
@@ -48,7 +50,7 @@ body {
     grid-area: contact;
 }
 
-.container {
+/* .container {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -59,7 +61,7 @@ body {
         "about"
         "skills"
         "contact"
-}
+} */
 
 .header {
     display: grid;
@@ -72,8 +74,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
-    margin-right: 15px;
-    grid-gap: 15px;
+    margin-right: 10px;
+    grid-gap: 10px;
+    text-align: right;
 }
 
 .skillsHead {
@@ -93,7 +96,6 @@ body {
 }
 
 .skills {
-    padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -101,7 +103,7 @@ body {
         "skillsHead"
         "skill-1"
         "skill-2"
-        "skill-3"
+        "skill-3";
 }
 
 .center {
@@ -116,7 +118,24 @@ body {
     width: 140px;
 }
 
-@media (min-width: 640px) {
+.project-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'projImg'
+        'projdesc';
+}
+
+.projImgBox {
+    grid-area: projImg;
+}
+
+.projDesc {
+    grid-area: projDesc;
+}
+
+@media only screen and (min-width: 768px) {
     .skills {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -126,13 +145,8 @@ body {
         grid-gap: 30px;
     }
 
-    .header-logo {
-        width: 80px;
-    }
-
-    .about p,
-    .skills p,
-    .contact p{
-        text-align: left;
+    .project-1 {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 'projImg projDesc'
     }
 }

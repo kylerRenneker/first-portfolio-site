@@ -10,8 +10,12 @@ $(function(){
 $(window).scroll(function(){
     if($(this).scrollTop() > 40){
         $('.arrow').addClass('hide');
+        $('.header').addClass('active');
+        $('.nav-links a').addClass('link-black');
     }
     else {
         $('.arrow').removeClass('hide');
+        $('.header').removeClass('active');
+        $('.nav-links a').removeClass('link-black');
     }
 })
