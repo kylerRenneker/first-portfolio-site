@@ -50,22 +50,9 @@ body {
     grid-area: contact;
 }
 
-/* .container {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "header"
-        "landing"
-        "about"
-        "skills"
-        "contact"
-} */
-
 .header {
     display: grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 10fr 1fr;
     justify-content: space-between;
     align-items: center;
 }

@@ -5,9 +5,10 @@ $(function(){
         $("html, body").animate({
             scrollTop: $(section).offset().top}, 'slow');
     });
-})
+
 
 $(window).scroll(function(){
+    console.log('scroll');
     if($(this).scrollTop() > 40){
         $('.arrow').addClass('hide');
         $('.header').addClass('active');
@@ -18,4 +19,8 @@ $(window).scroll(function(){
         $('.header').removeClass('active');
         $('.nav-links a').removeClass('link-black');
     }
+})
+
+
+
 })
