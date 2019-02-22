@@ -9,7 +9,7 @@ $(function(){
 
 $(window).scroll(function(){
     console.log('scroll');
-    if($(this).scrollTop() > 40){
+    if($(this).scrollTop() > 80){
         $('.arrow').addClass('hide');
         $('header').addClass('active');
         $('.nav-links a').addClass('link-black');

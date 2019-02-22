@@ -25,6 +25,16 @@ li {
     display: flex;
 }
 
+.landing-page::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+
 header {
     position: fixed;
     z-index: 1;
@@ -52,7 +62,7 @@ nav ul li{
     text-decoration: none;
     color: inherit;
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 800;
     letter-spacing: .15rem;
     text-shadow: 2px 2px 1px rgba(160, 160, 160, 0.5);  
@@ -130,6 +140,10 @@ a.email-button {
     margin-bottom: 40px;
 }
 
+.about p {
+    text-align: left;
+}
+
 .proj1Desc h2 {
     text-align: left;
 }
@@ -143,6 +157,10 @@ a.email-button {
     color: #1AC2F5;
 }
 
+.projectHead {
+    padding-bottom: 40px;
+}
+
 .proj1Desc p {
     text-align: left;
 }
@@ -153,7 +171,7 @@ a.email-button {
 }
 
 li.project-1 {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .projects a {
@@ -172,8 +190,8 @@ li.project-1 {
 }
 
 .projImgBox {
-    height: 320px;
-    width: 300px;
+    height: 280px;
+    width: 280px;
 }
 
 .projImgBackground {
@@ -294,6 +312,11 @@ li.project-1 {
         height: 54px;
         line-height: 54px;
         font-size: 1.4rem;
+    }
+
+    .projImgBox {
+        height: 360px;
+        width: 380px;
     }
 }
 

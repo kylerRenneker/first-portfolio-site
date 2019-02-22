@@ -6,8 +6,8 @@
 .box {
     max-width: 1000px;
     margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .about,
@@ -72,6 +72,7 @@ body {
 
 .projImgBox {
     grid-area: projImg;
+    margin: 0 auto;
 }
 
 .projDesc {
