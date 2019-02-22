@@ -6,23 +6,14 @@
 .box {
     max-width: 1000px;
     margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.landing,
 .about,
 .skills,
 .projects {
 margin: 80px auto 80px;
-}
-
-.landing,
-.about,
-.skills,
-.contact,
-.projects {
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 body {
@@ -30,40 +21,10 @@ body {
 }
 
 .header {
-    grid-area: header;
-}
-
-.landing {
-    grid-area: landing;
-}
-
-.about {
-    grid-area: about;
-}
-
-
-.skills {
-    grid-area: skills;
-}
-
-.contact {
-    grid-area: contact;
-}
-
-.header {
     display: grid;
     grid-template-columns: 10fr 1fr;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    list-style: none;
-    margin-right: 10px;
-    grid-gap: 10px;
-    text-align: right;
 }
 
 .skillsHead {
@@ -91,11 +52,6 @@ body {
         "skill-1"
         "skill-2"
         "skill-3";
-}
-
-.center {
-    display: grid;
-    justify-items: center;
 }
 
 .skl1-img,
