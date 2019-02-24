@@ -175,12 +175,13 @@ li.project-1 {
 }
 
 .projects a {
+    font-family: poppins, sans-serif;
     height: 45px;
     line-height: 43px;
     margin: 10px 10px;
     background-color: white;
     color: #1AC2F5;
-    border: 2px #1AC2F5 solid;
+    border: 3px #1AC2F5 solid;
     border-radius: 35px;
     width: 100px;
     display: inline-block;
@@ -228,7 +229,7 @@ li.project-1 {
 }
 
 .arrow {
-    position: fixed;
+    position: absolute;
     left: 50%;
     margin-left: -25px;
     bottom: 24px;
@@ -251,10 +252,15 @@ li.project-1 {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+.iconCredit {
+    background: #1AC2F5;
+    text-align: center;
+}
+
 @media only screen and (min-width: 768px){
-    .header-logo {
+    /* .header-logo {
         width: 80px;
-    }
+    } */
 
     .nav-links a {
         margin-right: 30px;
@@ -321,11 +327,59 @@ li.project-1 {
 }
 
 @media only screen and (min-width: 1280px){
-    /* .nav-links a {
-        font-size: 2.4rem;
+    .box {
+        min-width: 1280px;
     }
 
     .header-logo {
-        width: 100px;
-    } */
+        width: 80px;
+    }
+
+    img.header-logo {
+        margin: 10px;
+    }
+
+     .nav-links a {
+        font-size: 2.4rem;
+    }
+
+    .landing h1 {
+        font-size: 14rem;
+        letter-spacing: 1rem;
+    }
+
+    a.email-button {
+        width: 280px;
+        height: 74px;
+        line-height: 74px;
+        font-size: 1.8rem;
+        letter-spacing: .25rem;
+        word-spacing: .25rem;
+    }
+
+    p {
+        font-size: 4rem;
+    }
+
+    h2, .landing h2 {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    .projects a {
+        height: 55px;
+        line-height: 55px;
+        width: 200px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .box {
+        min-width: 1600px;
+    }
 }

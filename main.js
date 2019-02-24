@@ -7,20 +7,33 @@ $(function(){
     });
 
 
-$(window).scroll(function(){
-    console.log('scroll');
-    if($(this).scrollTop() > 80){
-        $('.arrow').addClass('hide');
+// $(window).scroll(function(){
+//     console.log('scroll');
+//     if($(this).scrollTop() > 80){
+//         $('.arrow').addClass('hide');
+//         $('header').addClass('active');
+//         $('.nav-links a').addClass('link-black');
+//     }
+//     else {
+//         $('.arrow').removeClass('hide');
+//         $('header').removeClass('active');
+//         $('.nav-links a').removeClass('link-black');
+//     }
+// })
+
+$(window).on('scroll', _.debounce(function() {
+    // Do expensive things
+    console.log(scroll);
+    if($(this).scrollTop() > 60){
+        // $('.arrow').addClass('hide');
         $('header').addClass('active');
         $('.nav-links a').addClass('link-black');
     }
     else {
-        $('.arrow').removeClass('hide');
+        // $('.arrow').removeClass('hide');
         $('header').removeClass('active');
         $('.nav-links a').removeClass('link-black');
     }
-})
-
-
+  }, 100));
 
 })
