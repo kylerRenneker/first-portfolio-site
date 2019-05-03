@@ -70,6 +70,11 @@ body {
         'projdesc';
 }
 
+.project-2 {
+    display: flex;
+    flex-direction: column;
+}
+
 .projImgBox {
     grid-area: projImg;
     margin: 0 auto;
@@ -92,5 +97,9 @@ body {
     .project-1 {
         grid-template-columns: 1fr 2fr;
         grid-template-areas: 'projImg projDesc'
+    }
+
+    .project-2 {
+        flex-direction: row-reverse;
     }
 }

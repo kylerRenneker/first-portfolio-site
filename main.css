@@ -104,6 +104,14 @@ nav ul li{
     background-color: #1AC2F5;
 }
 
+.landing-skills li {
+    display: inline;
+}
+
+.landing-skill-list {
+    padding-left: 10px;
+}
+
 a.email-button {
     font-size: 1.2rem;
     border-radius: 35px;
@@ -170,8 +178,30 @@ a.email-button {
     padding-bottom: 80px;
 }
 
-li.project-1 {
-    margin-top: 30px;
+.project-1 {
+    margin-top: 80px;
+}
+
+.project-2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.skills-used {
+    margin: auto;
+    font-size: 2.4rem;
+    text-align: center;
+    
+}
+
+.split-projects {
+    height: 1px;
+    border: 0;
+    box-shadow: 0 1px 10px -10px #8c8b8b inset;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #1ac2f5, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #1ac2f5, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #1ac2f5, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #1ac2f5, #f0f0f0);
 }
 
 .projects a {
@@ -269,7 +299,6 @@ li.project-1 {
 
     .about p,
     .skills p,
-    .projects p,
     .contact p {
         text-align: left;
     }
@@ -279,7 +308,7 @@ li.project-1 {
     }
 
     .proj1Desc {
-        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .landing h1 {
