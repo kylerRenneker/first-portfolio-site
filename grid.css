@@ -62,12 +62,8 @@ body {
 }
 
 .project-1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        'projImg'
-        'projdesc';
+    display: flex;
+    flex-direction: column;
 }
 
 .project-2 {
@@ -95,8 +91,7 @@ body {
     }
 
     .project-1 {
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas: 'projImg projDesc'
+        flex-direction: row;
     }
 
     .project-2 {

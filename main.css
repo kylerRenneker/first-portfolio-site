@@ -1,5 +1,5 @@
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 ul {
     padding: 0;
@@ -189,13 +189,13 @@ a.email-button {
 
 .skills-used {
     margin: auto;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
     text-align: center;
     
 }
 
 .split-projects {
-    height: 1px;
+    height: 3px;
     border: 0;
     box-shadow: 0 1px 10px -10px #8c8b8b inset;
     background-image: -webkit-linear-gradient(left, #f0f0f0, #1ac2f5, #f0f0f0);
@@ -307,8 +307,13 @@ a.email-button {
         margin-right: 40px;
     }
 
+    .skills-used {
+        font-size: 2rem;
+    }
+
     .proj1Desc {
         margin-right: 40px;
+        margin-left: 40px;
     }
 
     .landing h1 {
